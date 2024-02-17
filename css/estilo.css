@@ -27,7 +27,7 @@ main{
     font: arial medium 26pt;
     text-align: center;
     justify-content: center;
-    margin: 6% auto;
+    margin: 5% auto;
 }
 
 
@@ -103,13 +103,14 @@ main{
 }
 
 #bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
-    width: 100%;
-    height: 100%;
-    overflow: hidden ; /* evita do video passar a altura desejada do .wrap */
+}
+
+#videobg{
+    position: fixed; 
+    min-width: 100%; 
+    min-height: 100%;
 }
 
 #grelha{

@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: rgb(1, 19, 12);
+    font: inter medium 26pt;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";    
+    overflow: auto;  
+}
+
+#voltar{
+    position: absolute;
+    margin: 20px;
+    
+}
+
+
+#bg-video {
+    position: absolute;
+    background-color: aquamarine;
+    box-sizing: border-box;
+
+
+}
+
+#videobg{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    box-sizing: border-box;
+    z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+
+
+}
+
+header{
+    text-align: center;
+    grid-area: header;
+    background-color: rgba(1, 14, 10, 0.764);
+    width: 100%;
+    min-height: 60px;
+    line-height: 1rem;
+    padding: 5px 0px 25px 0px;
+    position: static;
+    box-sizing: border-box;
+    box-shadow: 5px 2px #000000d9;
+}
+
+header h1 {
+    display: inline-flex;
+    color: rgb(17, 227, 206);
+    margin: 0px;
+ 
+}
+
+
+
+main{
+    grid-area: main;
+    height: 99.75%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 3%;
+    background-color: rgba(171, 247, 234, 0.629);
+    box-sizing: border-box;
+}
+
+footer{
+    grid-area: footer;
+    min-height: 60px;
+    width: 100%;
+    background-color: rgba(1, 14, 10, 0.764);
+    color: whitesmoke;
+    font: inter medium 26pt;
+    text-align: center;
+    padding: 0px;
+    line-height: 3rem;
+    position: relative; bottom:0%;
+    box-sizing: border-box;
+
+}

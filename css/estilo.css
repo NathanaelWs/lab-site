@@ -143,6 +143,7 @@ footer{
 
 .logo-footer{
     width: 10%;
+    min-width: 60px;
     display: inline-block;
     justify-content: space-between;
     margin: 5px 5px;
